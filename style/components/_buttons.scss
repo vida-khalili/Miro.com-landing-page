@@ -1,0 +1,30 @@
+@import "../sass-utils/mixins";
+@import "../sass-utils/variables";
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  @include paragraph;
+
+  &--icontext {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &--texticon {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &--primary {
+    background-color: $blue;
+    color: white;
+    @include box-radius;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../sass-utils/variables";
+
+.header {
+  height: 90px;
+  margin: 0 auto;
+  padding: 8px 56px;
+  display: grid;
+  grid-template-columns: 90px 2fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid $gray;
+  .logo {
+    width: 90px;
+    margin-right: 16px;
+  }
+  .navlist {
+    margin-left: 16px;
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      li {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      &:hover {
+        color: $blue;
+        svg {
+          path {
+            stroke: $blue;
+          }
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}

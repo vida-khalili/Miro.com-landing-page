@@ -1,0 +1,38 @@
+@mixin heading1 {
+  font-size: 2.011rem;
+}
+
+@mixin heading2 {
+  font-size: 1.749rem;
+}
+
+@mixin heading3 {
+  font-size: 1.521rem;
+}
+
+@mixin heading4 {
+  font-size: 1.322rem;
+}
+
+@mixin heading5 {
+  font-size: 1.15rem;
+}
+
+@mixin paragraph {
+  font-size: 1rem;
+}
+
+@mixin small {
+  font-size: 0.87rem;
+}
+
+@mixin box-radius {
+  border-radius: 40px;
+  padding: 16px;
+}
+
+@mixin container {
+  margin: 0 auto;
+  padding: 24px 32px;
+  max-width: 1200px;
+}
