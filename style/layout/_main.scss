@@ -1,0 +1,267 @@
+@import "../sass-utils/mixins";
+@import "../sass-utils/variables";
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  &-flex {
+    gap: 24px;
+    display: flex;
+    padding: 30px 24px;
+    justify-content: center;
+  }
+  &-text {
+    flex-grow: 1;
+    max-width: 400px;
+
+    h1,
+    h2 {
+      line-height: 56px;
+      letter-spacing: -1px;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    p {
+      font-size: 18px;
+      color: $light-black;
+    }
+
+    .rating-box {
+      padding: 8px;
+      display: grid;
+      margin-top: 36px;
+      border-radius: 5px;
+      align-items: center;
+      background-color: $gray;
+      justify-items: center;
+      grid-template-columns: 1fr 0.5fr 0.75fr 0.75fr;
+
+      .stars {
+        display: flex;
+        gap: 4px;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .text {
+        margin-top: 8px;
+        font-size: 10px;
+        font-weight: 600;
+      }
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    a.more {
+      gap: 8px;
+      color: $blue;
+      display: flex;
+      font-size: 18px;
+      align-items: center;
+
+      &:hover {
+        text-decoration: none;
+      }
+      svg {
+        width: 24px;
+        fill: $blue;
+      }
+    }
+  }
+  &-image {
+    flex-basis: 640px;
+    margin-left: 40px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-1 {
+    margin-top: 150px;
+  }
+  &-2,
+  &-3 {
+    align-items: center;
+  }
+}
+
+.trusted-logo-bar {
+  padding: 24px 0;
+  margin-top: 40px;
+  text-align: center;
+  color: $light-black;
+
+  .logo-bar {
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 64px;
+      }
+    }
+  }
+}
+
+.middle-banner {
+  height: 500px;
+  display: flex;
+  padding-top: 132px;
+  padding-bottom: 150px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  background: center/contain no-repeat url("../../images/Banner_Desktop_v2.png");
+
+  .content {
+    right: 120px;
+    max-width: 50%;
+    text-align: center;
+    position: absolute;
+    p {
+      font-size: 18px;
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
+}
+
+.tabs-part {
+  padding: 30px 40px 30px 16px;
+  .tabs {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    align-items: center;
+    padding: 30px 40px 30px 16px;
+  }
+  .section-flex {
+    padding: 0;
+  }
+  .section-text {
+    padding: 30px 40px 30px 16px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      font-size: 18px;
+      color: $light-black;
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+
+      svg {
+        fill: $black;
+        width: 24px;
+      }
+    }
+  }
+}
+
+.features {
+  margin-top: 64px;
+  background-color: $yellow;
+  padding: 120px 0;
+
+  &-content {
+    max-width: 1120px;
+    text-align: center;
+
+    h2 {
+      font-size: 48px;
+      max-width: 630px;
+      margin: 0 auto;
+    }
+
+    .link {
+      margin-top: 16px;
+      a {
+        color: $black;
+        font-size: 18px;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .image-text {
+      img {
+        max-height: 128px;
+      }
+    }
+  }
+}
+
+.card-section {
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+  button {
+    margin: 0 auto;
+  }
+
+  .cards-bar {
+    margin: 24px 0;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 12px;
+  }
+  .section {
+    &-1 {
+      margin-top: 24px;
+    }
+    &-flex {
+      gap: 16px;
+      flex-basis: unset;
+      align-items: center;
+      flex-direction: column;
+    }
+    &-image {
+      flex-grow: 1;
+      flex-basis: unset;
+      margin-left: unset;
+    }
+  }
+
+  .middle-banner {
+    height: 300px;
+    .content {
+      right: 0;
+      max-width: 60%;
+      transform: scale(0.7);
+    }
+  }
+}

@@ -5,26 +5,57 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-  padding: 8px;
+  padding: 8px 12px;
   @include paragraph;
 
   &--icontext {
     display: grid;
     grid-template-columns: 20px 1fr;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
   }
 
   &--texticon {
     display: grid;
     grid-template-columns: 1fr 20px;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
   }
 
   &--primary {
     background-color: $blue;
     color: white;
     @include box-radius;
+  }
+
+  &--primary-outline {
+    color: $blue;
+    @include box-radius;
+    border: 1px solid $blue;
+    transition: background-color 200ms ease;
+    svg {
+      fill: $blue;
+    }
+    &:hover {
+      background-color: $blue10;
+    }
+  }
+
+  &--outline {
+    @include box-radius;
+    border: 1px solid $blue10;
+  }
+
+  &--selected {
+    @include box-radius;
+    background-color: $blue10;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px;
   }
 }

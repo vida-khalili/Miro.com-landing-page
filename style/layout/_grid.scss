@@ -1,0 +1,12 @@
+.features-content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 16px;
+  align-items: baseline;
+  justify-content: center;
+  .image-text {
+    gap: 8px;
+    display: grid;
+    justify-content: center;
+  }
+}

@@ -1,16 +1,28 @@
 @import "../sass-utils/variables";
+@import "../sass-utils/mixins";
+
+header {
+  border-bottom: 1px solid $gray10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+}
 
 .header {
+  max-width: 1400px;
   height: 90px;
   margin: 0 auto;
-  padding: 8px 56px;
+  padding: 8px 24px;
   display: grid;
-  grid-template-columns: 90px 2fr 1fr;
+  grid-template-columns: 90px 1.5fr 1fr;
   align-items: center;
-  border-bottom: 1px solid $gray;
   .logo {
     width: 90px;
-    margin-right: 16px;
+    margin-right: 24px;
+    margin-bottom: 8px;
   }
   .navlist {
     margin-left: 16px;
@@ -43,5 +55,39 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    grid-template-columns: unset;
+    height: auto;
+    gap: 8px;
+    .logo {
+      margin: 0 auto;
+    }
+    .navlist {
+      @include paragraph;
+      margin: 0 auto;
+      ul {
+        gap: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    position: unset;
+  }
+  .header {
+    padding: 8px;
+  }
+  .navlist {
+    font-size: 14px;
+    font-weight: 700;
+    svg {
+      display: none;
+    }
   }
 }

@@ -1,21 +1,21 @@
 @mixin heading1 {
-  font-size: 2.011rem;
+  font-size: 3.052rem;
 }
 
 @mixin heading2 {
-  font-size: 1.749rem;
+  font-size: 2.441rem;
 }
 
 @mixin heading3 {
-  font-size: 1.521rem;
+  font-size: 1.953rem;
 }
 
 @mixin heading4 {
-  font-size: 1.322rem;
+  font-size: 1.563rem;
 }
 
 @mixin heading5 {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 
 @mixin paragraph {
@@ -23,12 +23,18 @@
 }
 
 @mixin small {
-  font-size: 0.87rem;
+  font-size: 0.8rem;
 }
 
 @mixin box-radius {
   border-radius: 40px;
   padding: 16px;
+}
+
+@mixin card-style {
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: rgba(5, 0, 56, 0.08) 0px 4px 12px;
 }
 
 @mixin container {
