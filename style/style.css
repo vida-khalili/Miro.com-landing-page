@@ -199,7 +199,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: 2.8rem;
 }
 
 h3 {
@@ -236,6 +236,7 @@ header {
   width: 100%;
   z-index: 10;
   background-color: white;
+  box-shadow: 0 0 20px rgb(240, 240, 240);
 }
 
 .header {
@@ -459,10 +460,10 @@ header {
 .tabs-part .section-text {
   padding: 30px 40px 30px 16px;
 }
-.tabs-part ul {
+.tabs-part .section-text ul {
   list-style: none;
 }
-.tabs-part ul li {
+.tabs-part .section-text ul li {
   font-size: 18px;
   color: rgba(5, 0, 56, 0.6);
   display: grid;
@@ -471,9 +472,12 @@ header {
   gap: 16px;
   margin-bottom: 16px;
 }
-.tabs-part ul li svg {
+.tabs-part .section-text ul li svg {
   fill: #050038;
   width: 24px;
+}
+.tabs-part .section-text .integrate-tools {
+  margin-top: 32px;
 }
 
 .features {
@@ -522,7 +526,47 @@ header {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 500px) {
+.final-part {
+  padding: 60px 0;
+}
+.final-part .final-banner {
+  border-radius: 16px;
+  max-width: 1120px;
+  display: grid;
+  gap: 8px;
+  background-color: #050038;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  margin: 0 auto;
+}
+.final-part .final-banner h2 {
+  margin: 0;
+}
+.final-part .final-banner .content {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  display: grid;
+}
+.final-part .final-banner .content p {
+  margin: 0;
+  font-size: 18px;
+}
+.final-part .final-banner .content a {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+}
+.final-part .final-banner .content a:hover {
+  text-decoration: none;
+}
+.final-part .final-banner .content button {
+  width: 200px;
+  margin: 40px auto 0;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
   .container {
     padding: 12px;
   }
@@ -582,6 +626,155 @@ form .text_small {
   justify-content: center;
 }
 
+footer {
+  background-color: #050038;
+  color: white;
+}
+footer .content {
+  padding: 40px 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+footer .content .lists {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+footer .content .lists ul {
+  list-style: none;
+}
+footer .content .lists ul li {
+  margin-top: 6px;
+}
+footer .content .lists ul li:first-child {
+  font-weight: bold;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+footer .content .lists ul li:nth-child(2) {
+  margin-top: 0;
+}
+footer .content .lists ul li a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid transparent;
+  transition: border 250ms ease 0s;
+}
+footer .content .lists ul li a:hover {
+  border-bottom: 1px solid #ffd02f;
+  color: #ffd02f;
+}
+footer .content .lists ul li button {
+  margin-top: 20px;
+  color: white;
+  padding: 0;
+  transition: color 250ms ease 0s;
+}
+footer .content .lists ul li button svg {
+  fill: white;
+}
+footer .content .lists ul li button:hover {
+  color: #ffd02f;
+}
+footer .content .lists ul li button:hover svg {
+  fill: #ffd02f;
+}
+footer .content .social-links-app {
+  color: white;
+  margin-top: 100px;
+  padding: 40px 0;
+  border-top: 1px solid #9b99af;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .content .social-links-app .social-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .content .social-links-app .social-links .social {
+  margin-right: 24px;
+  display: flex;
+}
+footer .content .social-links-app .social-links .social button {
+  color: white;
+}
+footer .content .social-links-app .social-links .social button svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+footer .content .social-links-app .social-links .social button:hover {
+  color: #ffd02f;
+}
+footer .content .social-links-app .social-links .social button:hover svg {
+  fill: #ffd02f;
+}
+footer .content .social-links-app .social-links .links {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+footer .content .social-links-app .social-links .links button {
+  color: white;
+}
+footer .content .social-links-app .social-links .links button svg {
+  fill: white;
+}
+footer .content .social-links-app .social-links .links button:hover {
+  color: #ffd02f;
+}
+footer .content .social-links-app .social-links .links button:hover svg {
+  fill: #ffd02f;
+}
+footer .content .social-links-app .social-links .links a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid transparent;
+  transition: border 250ms ease 0s;
+  margin-right: 24px;
+}
+footer .content .social-links-app .social-links .links a:hover {
+  border-bottom: 1px solid #ffd02f;
+  color: #ffd02f;
+}
+footer .content .social-links-app .apps {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+footer .content .social-links-app .apps svg {
+  height: 50px;
+  transition: scale 500ms ease;
+}
+footer .content .social-links-app .apps svg:hover {
+  transform: scale(1.01);
+}
+
+@media screen and (max-width: 700px) {
+  footer .content .lists {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  footer .content .social-links-app {
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+  }
+  footer .content .social-links-app .social-links {
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .content .social-links-app .social-links .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .content .social-links-app .social-links .links a {
+    font-size: 14px;
+    margin-right: 4px !important;
+  }
+}
 .btn {
   cursor: pointer;
   background-color: transparent;
