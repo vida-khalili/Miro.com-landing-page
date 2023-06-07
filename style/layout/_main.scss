@@ -129,7 +129,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
-  background: center/contain no-repeat url("../../images/Banner_Desktop_v2.png");
 
   .content {
     right: 120px;
@@ -299,6 +298,9 @@
 
   .middle-banner {
     height: 300px;
+    img {
+      transform: scale(0.7);
+    }
     .content {
       right: 0;
       max-width: 60%;

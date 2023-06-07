@@ -56,6 +56,21 @@ header {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    button.lang,
+    .contact,
+    .login {
+      color: $black;
+      svg {
+        fill: $black;
+        stroke-width: 0;
+      }
+      &:hover {
+        color: $blue;
+        svg {
+          fill: $blue;
+        }
+      }
+    }
   }
 }
 

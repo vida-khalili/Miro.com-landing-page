@@ -26,6 +26,10 @@
     background-color: $blue;
     color: white;
     @include box-radius;
+    transition: background-color 100ms ease-in-out;
+    &:hover {
+      background-color: $dark-blue;
+    }
   }
 
   &--primary-outline {

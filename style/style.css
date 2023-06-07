@@ -280,6 +280,27 @@ header {
   justify-content: center;
   gap: 8px;
 }
+.header .buttons button.lang,
+.header .buttons .contact,
+.header .buttons .login {
+  color: #050038;
+}
+.header .buttons button.lang svg,
+.header .buttons .contact svg,
+.header .buttons .login svg {
+  fill: #050038;
+  stroke-width: 0;
+}
+.header .buttons button.lang:hover,
+.header .buttons .contact:hover,
+.header .buttons .login:hover {
+  color: rgb(66, 98, 255);
+}
+.header .buttons button.lang:hover svg,
+.header .buttons .contact:hover svg,
+.header .buttons .login:hover svg {
+  fill: rgb(66, 98, 255);
+}
 
 @media screen and (max-width: 1200px) {
   .header {
@@ -428,7 +449,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
-  background: center/contain no-repeat url("../../images/Banner_Desktop_v2.png");
 }
 .middle-banner .content {
   right: 120px;
@@ -586,6 +606,9 @@ header {
   }
   .middle-banner {
     height: 300px;
+  }
+  .middle-banner img {
+    transform: scale(0.7);
   }
   .middle-banner .content {
     right: 0;
@@ -799,6 +822,10 @@ footer .content .social-links-app .apps svg:hover {
   color: white;
   border-radius: 40px;
   padding: 16px;
+  transition: background-color 100ms ease-in-out;
+}
+.btn--primary:hover {
+  background-color: rgb(69, 91, 237);
 }
 .btn--primary-outline {
   color: rgb(66, 98, 255);
