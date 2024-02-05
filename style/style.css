@@ -773,6 +773,16 @@ footer .content .social-links-app .apps svg {
 footer .content .social-links-app .apps svg:hover {
   transform: scale(1.01);
 }
+footer .content .developer {
+  color: orange;
+  text-align: center;
+  font-size: 14px;
+}
+footer .content .developer a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 @media screen and (max-width: 700px) {
   footer .content .lists {

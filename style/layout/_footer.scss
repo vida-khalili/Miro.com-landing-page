@@ -122,6 +122,16 @@ footer {
         }
       }
     }
+    .developer {
+      color: orange;
+      text-align: center;
+      font-size: 14px;
+      a {
+        color: white;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
   }
 }
 
